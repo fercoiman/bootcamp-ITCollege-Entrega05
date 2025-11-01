@@ -7,24 +7,14 @@ que permita cambiar el fondo de dicho texto entre los colores amarillo,
 cyan y naranja de
 manera rotativa */
 
-import React, { useState } from "react";
+function Contenido(props) {
+  const paragraphStyle = {
+    color: "white",
+    backgroundColor: props.color,
+    fontSize: "60px",
+  };
 
-function Contenido(text) {
-  const [color, setColor] = useState("yellow");
-
-  let indexColor = 0;
-
-  function setColor() {
-    const vectorColores = ["yellow", "cyan", "orange"];
-    if (indexColor >= 0 && indexColor < 3) {
-      indexColor++;
-    } else {
-      indexColor = 0;
-    }
-    return vectorColores[indexColor];
-  }
-
-  return <button onClick={setColor()}>{text}</button>;
+  return <p style={paragraphStyle}>{props.texto}</p>;
 }
 
 export default Contenido;
