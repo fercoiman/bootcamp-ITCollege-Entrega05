@@ -3,11 +3,11 @@ import Encabezado from "../components/Encabezado";
 import Contenido from "../components/Contenido";
 
 function App() {
-  const estiloEncabezado = { color: "red" };
+  const estiloEncabezado = { color: "blue" };
   const textoEncabezado = "Este componente es STATELESS.";
 
   const contenidoTexto = "Recibi este texto";
-  const botonTexto = "Cambiar Color";
+  const botonTexto = "Cambiar Color de Fondo";
 
   return (
     <>
