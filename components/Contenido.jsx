@@ -8,7 +8,7 @@ function Contenido(props) {
   function changeTextBackgroundColor() {
     const nextIndex = (index + 1) % vectorColores.length;
     setIndex(nextIndex);
-    setColor(vectorColores[index]);
+    setColor(vectorColores[nextIndex]);
   }
 
   const paragraphStyle = {
